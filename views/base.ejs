@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+       
+
+        <link rel="stylesheet" href="/css/base.css">
+    </head>
+    <body>
+       
+    
+        <div id="header">
+            <a href="" id="resetPassword" >Reset Password</a>
+        <a href="/users/signOut" >Sign-Out</a>
+        </div>
+        
+        <div id="bg-model">
+            <div id="modal-content">
+               <div id="close">+</div>
+              <form action="/users/password/changepassword" id="changePassword" method="post">
+                <h1>Reset Your Password</h1>
+                  <input type="password" placeholder="New Password" name="newPassword"><br>
+                  <input type="password" placeholder="Retype-Password" name="retypePassword"><br>
+                  <button id="pass-submit">Submit</button>
+              </form>
+            </div>
+        </div>
+        <script src="/js/base.js"></script>
+    </body>
+
+   
+</html>

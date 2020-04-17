@@ -1,0 +1,63 @@
+<html>
+    <head>
+      <script src='https://www.google.com/recaptcha/api.js'></script>
+     
+        <title>Universal Login-Form</title>
+        <link rel="stylesheet" href="/css/home.css">
+         
+    </head>
+    <body>
+     
+       
+        <div id="home-container">
+              <div id="info-container">
+                 
+                    <h2 style="padding-top: 20px;color: blue;
+                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" >UNIVERSAL LOGIN-FORM</h2>
+                    <h4 style="padding: 5px;" >A form where any one can use for authentication</h4>
+              </div>
+              <div id="login-container">
+                  <div class="left-container">
+                    <a href="/users/auth/google" id="google-form">Goole SignIn/SignUp</a>
+                    <p>Register with your Email <button id="register">Register</button> here..!</p>
+                  </div>
+             
+                  <div id="right container">
+                           <label for="">Login</label>
+                           <form action="/home" method="post">
+                               <input type="email" placeholder="Email" name="email" required>
+                               <input type="password" placeholder="Password" name="password" required>
+                               <br>
+                               <div style="padding-left: 30px;" class="g-recaptcha" data-sitekey="6LcDTeoUAAAAAL7coivrBg_YbhYZOazTlt7xaVei" data-callback="verifyCaptcha"></div>
+                                <div id="g-recaptcha-error"></div>
+                               <br>
+                               <a href="users/password/forgotpassword" style="padding-right: 70px;">Forgot Password</a>
+                               <input type="submit" id="loginButton" value="Login"/>
+                           </form>
+                           
+                  </div>
+              </div>
+        </div>
+        <div id="bg-model">
+            <div id="modal-content">
+               <div id="close">+</div>
+              <div >
+               
+                <form action="/base" id="login-box" method="POST"><br>
+                  <h2>Regitser</h2>
+                 <input type="text" placeholder="Name" name="name" required><br>
+                 <input type="email" placeholder="Email" name="email" required><br>
+                 <input type="password" placeholder="Password" name="password" required><br>
+                 <input type="password" placeholder="Confirm-Password" name="confirmPassword" required><br>
+                 <input id="reg-submit" type="submit">
+                </form>
+              </div>
+            </div>
+        </div>
+
+          
+
+
+        <script src="/js/home.js"></script>
+    </body>
+</html>
