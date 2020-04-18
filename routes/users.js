@@ -8,6 +8,6 @@ router.get('/auth/google/callback',passport.authenticate('google',{failureRedire
 router.get('/signOut',homeController.signOut);
 router.use('/password',require('./password'));
 
-
+router.get('/verify',homeController.verify);
 
 module.exports=router;

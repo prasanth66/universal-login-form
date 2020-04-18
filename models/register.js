@@ -13,6 +13,13 @@ const registerSchema=new mongoose.Schema({
     password:{
         type:String,
         required:true
+    },
+    secretToken:{
+        type:String
+    },
+    active :{
+        type:Boolean,
+        default:false
     }
 },{timestamps:true});
 

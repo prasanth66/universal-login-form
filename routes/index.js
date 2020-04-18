@@ -6,6 +6,7 @@ const homeController=require('../controllers/home_controller');
 router.get('/',homeController.home);
 router.post('/base',homeController.register);
 router.post('/createpassword',homeController.createPassword);
+router.post('/checkverify',homeController.checkverify);
 
 //authenticate using passport
 router.post('/home',passport.authenticate(
