@@ -11,6 +11,9 @@ module.exports.home=function(req,res){
     return res.render('home');
 };
 
+module.exports.log=function(req,res){
+    return res.render('base');
+}
 
 //method to register new user
 module.exports.register=async function(req,res){

@@ -34,7 +34,8 @@ passport.use(new googleStartegy({
             User.create({
                 name:profile.displayName,
                 email:profile.emails[0].value,
-                password:hash
+                password:hash,
+                active:true
             },function(err,user){
                 if(err){Console.log("error in creating user by google");return;}
                
